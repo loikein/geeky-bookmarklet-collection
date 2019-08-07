@@ -16,6 +16,11 @@ Goals:
 
 [Awesome Bookmarklets](https://codepen.io/thesturs/pen/xbRomP)
 
+## [Browser Tab Notepad](https://gist.github.com/loikein/24692da5ef45242a469dbf316b016c48#file-browser-tab-notepad-html)
+
+```html
+data:text/html,<html contenteditable style="font-size:1.5rem; line-height:1.4; max-width:60rem; margin:0 auto; padding:4rem;" spellcheck="false"><script>document.documentElement.focus();</script><title>Text Editor</title>
+```
 
 ## [Google Translate](https://translate.google.com/)
 
