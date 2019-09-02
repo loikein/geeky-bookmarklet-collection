@@ -8,11 +8,19 @@ Goals:
 
 ## (Maybe Useful) References
 
-[Topic: bookmarklet](https://github.com/topics/bookmarklet)
+### Tutorials
+
+[How To Make a Bookmarklet For Your Web Application – BetterExplained](https://betterexplained.com/articles/how-to-make-a-bookmarklet-for-your-web-application/)
 
 [Making Bookmarklets](https://gist.github.com/caseywatts/c0cec1f89ccdb8b469b1)
 
 [Create Bookmarklets \- The Right Way](https://code.tutsplus.com/tutorials/create-bookmarklets-the-right-way--net-18154)
+
+### Other Collections
+
+[37 Bookmarklets to Boost Your Productivity in Chrome, Firefox & Safari \| The Tech Basket](https://www.thetechbasket.com/internet/most-useful-bookmarklets/1398/)
+
+[Topic: bookmarklet](https://github.com/topics/bookmarklet)
 
 [Awesome\-Bookmarklets/README\.md at master · Priyank\-Vaghela/Awesome\-Bookmarklets](https://github.com/Priyank-Vaghela/Awesome-Bookmarklets/blob/master/README.md)
 
@@ -39,8 +47,6 @@ Anything to Chinese
 ```javascript
 javascript:location='http://translate.google.com/translate?langpair=auto|zh&u='+encodeURIComponent(location)
 ```
-
-another vertion:
 
 ```javascript
 javascript: var%20t=((window.getSelection&&window.getSelection())%7C%7C(document.getSelection&&document.getSelection())%7C%7C(document.selection&&document.selection.createRange&&document.selection.createRange().text)); var%20e=(document.charset%7C%7Cdocument.characterSet);if(t!='')%7Blocation.href='http://translate.google.com/?text='+t+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e; %7Delse%7Blocation.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e;%7D;
@@ -93,6 +99,10 @@ javascript:void(open('https://archive.is/?run=1&url='+encodeURIComponent(documen
 javascript:(function(){%20window.open('http://web.archive.org/web/*/'+location.host)})();
 ```
 
+```javascript
+javascript:void(location.href = 'http://web.archive.org/web/*/' + escape(location.href));
+```
+
 ## Sort Tables
 
 ```javascript
@@ -104,3 +114,4 @@ javascript:function toArray (c){var a, k;a=new Array;for (k=0; k<c.length; ++k)a
 ```javascript
 javascript:uls=document.getElementsByTagName("ul"); for (i=uls.length-1; i>=0; --i) { oldul = uls[i]; newol = document.createElement("ol"); for(j=0;j<oldul.childNodes.length;++j) newol.appendChild(oldul.childNodes[j].cloneNode(true)); oldul.parentNode.replaceChild(newol, oldul); } void 0
 ```
+
