@@ -12,7 +12,7 @@ Goals:
 
 - [\(Maybe Useful\) References](#maybe-useful-references)
     - [Tutorials](#tutorials)
-    - [Other Collections](#other-collections)
+    - [Collections](#collections)
 - [Standalone](#standalone)
     - [Browser Tab Notepad](#browser-tab-notepad)
 - [Enhancement](#enhancement)
@@ -40,8 +40,9 @@ Goals:
 - [Making Bookmarklets](https://gist.github.com/caseywatts/c0cec1f89ccdb8b469b1)
 - [Create Bookmarklets \- The Right Way](https://code.tutsplus.com/tutorials/create-bookmarklets-the-right-way--net-18154)
 
-### Other Collections
+### Collections
 
+- [Bookmarklet - 小书签，实用浏览器小工具补完 - 小众软件](https://www.appinn.com/bookmarklet/)
 - [无需安装浏览器插件，这些常用功能用「小书签」也能实现 - 少数派](https://sspai.com/post/45662)
 - [用小书签改善 Safari 网页阅读效果 - 少数派](https://sspai.com/post/52286)
 - [37 Bookmarklets to Boost Your Productivity in Chrome, Firefox & Safari \| The Tech Basket](https://www.thetechbasket.com/internet/most-useful-bookmarklets/1398/)
