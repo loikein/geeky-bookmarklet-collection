@@ -17,6 +17,7 @@ Goals:
     - [Browser Tab Notepad](#browser-tab-notepad)
 - [Enhancement](#enhancement)
     - [Google Translate](#google-translate)
+    - [Custom CSS](#custom-css)
     - [Sort Tables](#sort-tables)
     - [Unordered List to Ordered List](#unordered-list-to-ordered-list)
     - [Reading Mode w/ Instapaper](#reading-mode-w-instapaper)
@@ -77,6 +78,12 @@ javascript:location='http://translate.google.com/translate?langpair=auto|zh&u='+
 
 ```js
 javascript: var%20t=((window.getSelection&&window.getSelection())%7C%7C(document.getSelection&&document.getSelection())%7C%7C(document.selection&&document.selection.createRange&&document.selection.createRange().text)); var%20e=(document.charset%7C%7Cdocument.characterSet);if(t!='')%7Blocation.href='http://translate.google.com/?text='+t+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e; %7Delse%7Blocation.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e;%7D;
+```
+
+### [Custom CSS](http://juicystudio.com/article/accessible-stylesheet-bookmarklet.php)
+
+```js
+javascript:(function(){if (!document.getElementById('someuniqueid')){var objHead = document.getElementsByTagName('head'); if (objHead[0]){if (document.createElementNS && objHead[0].tagName == 'head') var objCSS = objHead[0].appendChild(document.createElementNS('http://www.w3.org/1999/xhtml', 'link')); else var objCSS = objHead[0].appendChild(document.createElement('link')); objCSS.id = 'someuniqueid'; objCSS.rel = 'stylesheet'; objCSS.href = 'http://juicystudio.com/css/bm.css'; objCSS.type = 'text/css';}}})()
 ```
 
 ### Sort Tables
