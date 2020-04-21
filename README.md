@@ -1,8 +1,10 @@
 # Geeky Bookmarklet Collection
 
+If I put something here, I have used it.
+
 Goals:
 
-- List
+- Reserve
 - Breakdown
 - Learn
 
@@ -11,6 +13,7 @@ Goals:
 <!-- MarkdownTOC -->
 
 - [\(Maybe Useful\) References](#maybe-useful-references)
+    - [Tools](#tools)
     - [Tutorials](#tutorials)
     - [Collections](#collections)
 - [Standalone](#standalone)
@@ -34,16 +37,21 @@ Goals:
 
 ## (Maybe Useful) References
 
+### Tools
+
+- [JavaScript Minifier](https://javascript-minifier.com/)
+- [Bookmarkleter](https://chriszarate.github.io/bookmarkleter/)
+
 ### Tutorials
 
-- [Bookmarklet 编写指南 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/06/a_guide_for_writing_bookmarklet.html)
+- [Bookmarklet 编写指南 \- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/06/a_guide_for_writing_bookmarklet.html)
 - [How To Make a Bookmarklet For Your Web Application – BetterExplained](https://betterexplained.com/articles/how-to-make-a-bookmarklet-for-your-web-application/)
 - [Making Bookmarklets](https://gist.github.com/caseywatts/c0cec1f89ccdb8b469b1)
 - [Create Bookmarklets \- The Right Way](https://code.tutsplus.com/tutorials/create-bookmarklets-the-right-way--net-18154)
 
 ### Collections
 
-- [Bookmarklet - 小书签，实用浏览器小工具补完 - 小众软件](https://www.appinn.com/bookmarklet/)
+- [Bookmarklet \- 小书签，实用浏览器小工具补完 - 小众软件](https://www.appinn.com/bookmarklet/)
 - [无需安装浏览器插件，这些常用功能用「小书签」也能实现 - 少数派](https://sspai.com/post/45662)
 - [用小书签改善 Safari 网页阅读效果 - 少数派](https://sspai.com/post/52286)
 - [37 Bookmarklets to Boost Your Productivity in Chrome, Firefox & Safari \| The Tech Basket](https://www.thetechbasket.com/internet/most-useful-bookmarklets/1398/)
