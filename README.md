@@ -32,6 +32,7 @@ Goals:
 - [Extension](#extension)
     - [Google in This Domain](#google-in-this-domain)
     - [QR Code](#qr-code)
+    - [Mobile Console](#mobile-console)
 
 <!-- /MarkdownTOC -->
 
@@ -190,4 +191,10 @@ javascript:var%20Bar=location.host+%22%22;q%20=%20%22%22%20+%20(window.getSelect
 
 ```js
 javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='%20+%20decodeURIComponent(location.href));void(0);
+```
+
+### [Mobile Console](https://github.com/liriliri/eruda)
+
+```js
+javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
 ```
