@@ -21,6 +21,7 @@ Goals:
 - [Enhancement](#enhancement)
     - [Google Translate](#google-translate)
     - [Custom CSS](#custom-css)
+    - [Refresh CSS](#refresh-css)
     - [Sort Tables](#sort-tables)
     - [Unordered List to Ordered List](#unordered-list-to-ordered-list)
     - [Reading Mode w/ Instapaper](#reading-mode-w-instapaper)
@@ -93,6 +94,12 @@ javascript: var%20t=((window.getSelection&&window.getSelection())%7C%7C(document
 
 ```js
 javascript:(function(){if (!document.getElementById('someuniqueid')){var objHead = document.getElementsByTagName('head'); if (objHead[0]){if (document.createElementNS && objHead[0].tagName == 'head') var objCSS = objHead[0].appendChild(document.createElementNS('http://www.w3.org/1999/xhtml', 'link')); else var objCSS = objHead[0].appendChild(document.createElement('link')); objCSS.id = 'someuniqueid'; objCSS.rel = 'stylesheet'; objCSS.href = 'http://juicystudio.com/css/bm.css'; objCSS.type = 'text/css';}}})()
+```
+
+### [Refresh CSS](https://lea.verou.me/2018/09/refresh-css-bookmarklet-v2/)
+
+```js
+javascript:{let e=(e,t=document)=>Array.from(t.querySelectorAll(e)),t=r=>{for(let t of e('link[rel=stylesheet][href]',r)){let e=new URL(t.href);e.searchParams.set('forceReload',Date.now()),t.href=e}for(let o of e('iframe',r))o.contentDocument&&t(o.contentDocument)};t()}
 ```
 
 ### Sort Tables
