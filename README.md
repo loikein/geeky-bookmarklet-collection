@@ -61,6 +61,7 @@ Goals:
 - [Awesome\-Bookmarklets/README\.md at master · Priyank\-Vaghela/Awesome\-Bookmarklets](https://github.com/Priyank-Vaghela/Awesome-Bookmarklets/blob/master/README.md)
 - [marcobiedermann/awesome\-bookmarklets: Awesome collection of helpful bookmarklets](https://github.com/marcobiedermann/awesome-bookmarklets)
 - [Awesome Bookmarklets](https://codepen.io/thesturs/pen/xbRomP)
+- [Bookmarklets \(JavaScript Favelets\)](http://dmcritchie.mvps.org/ie/bookmarklets.htm)
 
 ## Standalone
 
