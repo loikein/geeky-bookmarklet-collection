@@ -20,7 +20,7 @@ Goals:
     - [Browser Tab Notepad](#browser-tab-notepad)
 - [Enhancement](#enhancement)
     - [Google Translate](#google-translate)
-    - [Enable right click & copy](#enable-right-click-copy)
+    - [Enable right click & copy](#enable-right-click--copy)
     - [Add TOC](#add-toc)
     - [Custom CSS](#custom-css)
     - [Refresh CSS](#refresh-css)
