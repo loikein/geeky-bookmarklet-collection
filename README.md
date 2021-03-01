@@ -20,6 +20,7 @@ Goals:
     - [Browser Tab Notepad](#browser-tab-notepad)
 - [Enhancement](#enhancement)
     - [Google Translate](#google-translate)
+    - [Enable right click & copy](#enable-right-click-copy)
     - [Add TOC](#add-toc)
     - [Custom CSS](#custom-css)
     - [Refresh CSS](#refresh-css)
@@ -90,6 +91,12 @@ javascript:location='http://translate.google.com/translate?langpair=auto|zh&u='+
 
 ```js
 javascript: var%20t=((window.getSelection&&window.getSelection())%7C%7C(document.getSelection&&document.getSelection())%7C%7C(document.selection&&document.selection.createRange&&document.selection.createRange().text)); var%20e=(document.charset%7C%7Cdocument.characterSet);if(t!='')%7Blocation.href='http://translate.google.com/?text='+t+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e; %7Delse%7Blocation.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&hl=zh-CN&langpair=auto%7Czh-CN&tbb=1&ie='+e;%7D;
+```
+
+### [Enable right click & copy](https://stackoverflow.com/a/57065599)
+
+```js
+javascript: function enableContextMenu(aggressive = true) { void(document.ondragstart=null); void(document.onselectstart=null); void(document.onclick=null); void(document.onmousedown=null); void(document.onmouseup=null); void(document.body.oncontextmenu=null); enableRightClickLight(document); if (aggressive) { enableRightClick(document); removeContextMenuOnAll("body"); removeContextMenuOnAll("img"); removeContextMenuOnAll("td"); } } function removeContextMenuOnAll(tagName) { var elements = document.getElementsByTagName(tagName); for (var i = 0; i < elements.length; i++) { enableRightClick(elements[i]); } } function enableRightClickLight(el) { el || (el = document); el.addEventListener("contextmenu", bringBackDefault, true); } function enableRightClick(el) { el || (el = document); el.addEventListener("contextmenu", bringBackDefault, true); el.addEventListener("dragstart", bringBackDefault, true); el.addEventListener("selectstart", bringBackDefault, true); el.addEventListener("click", bringBackDefault, true); el.addEventListener("mousedown", bringBackDefault, true); el.addEventListener("mouseup", bringBackDefault, true); } function restoreRightClick(el) { el || (el = document); el.removeEventListener("contextmenu", bringBackDefault, true); el.removeEventListener("dragstart", bringBackDefault, true); el.removeEventListener("selectstart", bringBackDefault, true); el.removeEventListener("click", bringBackDefault, true); el.removeEventListener("mousedown", bringBackDefault, true); el.removeEventListener("mouseup", bringBackDefault, true); } function bringBackDefault(event) { event.returnValue = true; (typeof event.stopPropagation === 'function') && event.stopPropagation(); (typeof event.cancelBubble === 'function') && event.cancelBubble(); } enableContextMenu();
 ```
 
 ### [Add TOC](http://electricdevelopment.blogspot.com/2005/11/new-release-autotoc-16.html)
